@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Todo List</h1>
+            <div class="input-section">
+                <input id="todo-input" type="text" placeholder="Add your todo here..">
+                <button id="add-button">Add</button>
+            </div>
+        </header>
+        <ul id="todo-list"></ul>
+        <div class="footer">
+            <div class="filter-section">
+                <label for="filter-todos">Filter:</label>
+                <select id="filter-todos">
+                    <option value="all">All Todos</option>
+                    <option value="completed">Completed Todos</option>
+                    <option value="pending">Pending Todos</option>
+                </select>
+            </div>
+            <div class="task-count">
+                <p>Total Tasks: <span id="total-task-count">0</span></p>
+                <p>Completed Tasks: <span id="completed-task-count">0</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
